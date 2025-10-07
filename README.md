@@ -118,23 +118,28 @@ Specifies the mechanism by which the tracker is invoked.
 | 1 | **Direct** - Tracker is explicitly embedded in the ad markup delivered in the bid response. This includes image pixels, script tags, iframes, and other directly referenced resources. |
 | 2 | **Redirect** - Tracker is loaded through redirect chains, server-side calls, or dynamically injected after initial ad load. This includes trackers invoked by JavaScript, redirect URLs, or secondary resource loading. |
 
-### 5.3 IAB TCF Purpose IDs
+### 5.3 IAB TCF Vendor IDs
 
-Reference the IAB Transparency & Consent Framework Policies for complete definitions.
+The `tcf_vendor_id` field references specific vendors registered in the IAB Transparency & Consent Framework Global Vendor List (GVL). Each vendor ID is unique and corresponds to a specific organization or service provider.
 
-| Purpose ID | Purpose Name |
-|------------|--------------|
-| 1 | Store and/or access information on a device |
-| 2 | Select basic ads |
-| 3 | Create a personalized ads profile |
-| 4 | Select personalized ads |
-| 5 | Create a personalized content profile |
-| 6 | Select personalized content |
-| 7 | Measure ad performance |
-| 8 | Measure content performance |
-| 9 | Apply market research to generate audience insights |
-| 10 | Develop and improve products |
-| 11 | Use limited data to select advertising |
+**Implementation Notes:**
+- Vendor IDs are assigned and maintained by IAB Europe
+- The complete and current Global Vendor List is available at: https://vendor-list.consensu.org/
+- Implementers MUST reference the current GVL to obtain accurate vendor IDs
+- Vendor IDs may be added, modified, or removed; implementers should regularly sync with the latest GVL version
+- Each vendor's entry in the GVL includes their purposes, legitimate interest purposes, special features, and other TCF-relevant information
+
+**Example Vendor IDs** (for illustrative purposes only - always verify against current GVL):
+
+| Vendor ID | Vendor Name (Example) |
+|-----------|----------------------|
+| 755 | Google Advertising Products |
+| 123 | Pubmatic |
+| 456 | The Trade Desk |
+| 32 | Xandr |
+| 52 | Magnite |
+
+**Important:** The examples above are for documentation purposes only. Always validate vendor IDs against the official IAB TCF Global Vendor List at the time of implementation.
 
 ---
 
@@ -314,3 +319,18 @@ Reference the IAB Transparency & Consent Framework Policies for complete definit
 
 ---
 
+## Appendix B: Contact Information
+
+**IAB Tech Lab**  
+116 East 27th Street, 6th Floor  
+New York, NY 10016  
+https://iabtechlab.com
+
+For questions regarding this extension specification, please contact:  
+techlab@iabtechlab.com
+
+---
+
+**© 2025 IAB Technology Laboratory. All rights reserved.**
+
+*This extension specification is provided "as is" without warranty of any kind. IAB Tech Lab and its members disclaim all warranties with regard to this specification.*
