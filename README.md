@@ -319,18 +319,3 @@ The `tcf_vendor_id` field references specific vendors registered in the IAB Tran
 
 ---
 
-## Appendix B: Contact Information
-
-**IAB Tech Lab**  
-116 East 27th Street, 6th Floor  
-New York, NY 10016  
-https://iabtechlab.com
-
-For questions regarding this extension specification, please contact:  
-techlab@iabtechlab.com
-
----
-
-**© 2025 IAB Technology Laboratory. All rights reserved.**
-
-*This extension specification is provided "as is" without warranty of any kind. IAB Tech Lab and its members disclaim all warranties with regard to this specification.*
